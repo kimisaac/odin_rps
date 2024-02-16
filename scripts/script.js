@@ -11,6 +11,7 @@ function getComputerChoice(){
 }
 
 function playRound(playerSelection,computerSelection){
+    playerSelection = playerSelection.toLowerCase();
     if (playerSelection==computerSelection){
         return "Draw!";
     }
@@ -42,9 +43,5 @@ function playRound(playerSelection,computerSelection){
 }
 
 for (let i = 0; i < 1; i++) {
-    while (userInput!= "rock" || userInput!= "paper" || userInput!= "scissors"){
-        let userInput = prompt("rock,paper,scissors?")
-        userInput = userInput.toLowerCase()
-    }
-    console.log(playRound(userInput,getComputerChoice()));
+    console.log(playRound(prompt("rock,paper,scissors?"),getComputerChoice()));
 }
