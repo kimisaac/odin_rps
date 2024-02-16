@@ -42,6 +42,6 @@ function playRound(playerSelection,computerSelection){
 
 }
 
-for (let i = 0; i < 1; i++) {
+for (let i = 0; i < 3; i++) {
     console.log(playRound(prompt("rock,paper,scissors?"),getComputerChoice()));
 }
